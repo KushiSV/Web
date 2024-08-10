@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Preparedness Website</title>
+    <link rel="stylesheet" href="stylehtml.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="alerts">
+            <h2>Real-time Alerts</h2>
+            <ul id="alert-list" aria-live="polite">
+                <!-- Alerts will be dynamically inserted here -->
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Disaster Response Education</h2>
+            <ul>
+                <li><a href="#">Earthquake Preparedness</a></li>
+                <li><a href="#">Flood Safety</a></li>
+            </ul>
+        </section>
+        <section id="resources">
+            <h2>Local Resources</h2>
+            <ul id="resource-list" aria-live="polite">
+                <!-- Resources will be dynamically inserted here -->
+            </ul>
+        </section>
+        <section id="community">
+            <h2>Community Forum</h2>
+            <textarea id="forum-post" placeholder="Share your thoughts or ask a question"></textarea>
+            <button id="post-btn">Post</button>
+            <ul id="forum-posts" aria-live="polite">
+                <!-- Forum posts will be dynamically inserted here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Disaster Preparedness. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:info@disasterprep.com">info@disasterprep.com</a></p>
+    </footer>
+    <script src="scripthtml.js"></script>
+</body>
+</html>
