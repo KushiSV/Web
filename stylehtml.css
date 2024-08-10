@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+header {
+    background-color:brown;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    color:antiquewhite;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color:#0056b3;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color:#f4f4f4;
+    padding: 1.5em;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color:crimson;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid wheat;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color:brown;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#forum-post {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#post-btn {
+    background-color:crimson;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#post-btn:hover {
+    background-color:crimson;
+}
+
+footer {
+    background-color: #333;
+    color:cadetblue;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+    }
+
+    section {
+        padding: 1em;
+        width: 90%;
+    }
+
+    #forum-post {
+        width: 100%;
+    }
+}
