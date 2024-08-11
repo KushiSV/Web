@@ -62,6 +62,66 @@ h2 {
     font-size: 1.5em;
 }
 
+#alerts {
+    background: #f4f4f4; /* Match background with other sections */
+    color: #333333; /* Consistent text color for sections */
+    padding: 1.5em; /* Adjust padding for alignment */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Match shadow with other sections */
+    border-radius: 8px; /* Match border-radius with other sections */
+    margin-bottom: 20px; /* Ensure consistent margin with other sections */
+    width: 100%;
+    max-width: 800px; /* Match max-width with other sections */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.alert-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.alert-items {
+    width: 100%;
+    position: relative;
+    animation: slide-left 15s linear infinite; /* Horizontal sliding animation */
+}
+
+.alert-items ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: block; /* Ensure each item is in a separate row */
+}
+
+.alert-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add border between items */
+    font-size: 16px;
+    background-color: #f4f4f4; /* Match background with other sections */
+    color:brown; /* Match text color with other sections */
+    box-sizing: border-box;
+    white-space: nowrap; /* Prevent text wrapping */
+    width: 100%; /* Take full width of the container */
+
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#alerts h2 {
+    margin-top: 0;
+    color: crimson;
+    font-size: 1.5em;
+    text-align: left; /* Align heading consistently */
+}
+
 ul {
     list-style: none;
     margin: 0;
